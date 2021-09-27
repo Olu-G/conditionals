@@ -15,3 +15,25 @@ if (engineIndicatorLight === "green") {
 } else {
    console.log("engines are off");
 }
+
+if (crewStatus === true ) {
+  console.log ('crew ready');
+} else {
+  console.log('Crew Not Ready')
+}
+
+if (computerStatusCode === 200){
+  console.log('Please stand by. computer is rebooting')
+} else if (computerStatusCode === 400){
+  console.log('Success. Computer online')
+}else {
+  console.log('ALERT: compuetr offline')
+}
+
+if (shuttleSpeed > 17500){
+  console.log('ALERT: escape velocity reached')
+} else if (shuttleSpeed < 8000){
+  console.log('ALERT: cannot control orbit')
+  } else {
+    console.log('stable speed')
+  }
